@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - Ny produkt</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Administration</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Produkter</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>[Godkänd] Administration: Ny Produkt </h2>
+            <form>
+                <label for="name">Namn</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="description">Beskrivning</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="image">Bild</label>
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <label for="sku">SKU</label>
+                <input type="text" id="sku" name="sku" required>
+
+                <label for="price">Pris</label>
+                <input type="number" id="price" name="price" required>
+
+                <fieldset>
+                    <legend>Kategorier</legend>
+                    <label><input type="checkbox" name="category" value="tshirts"> T-Shirts</label>
+                    <label><input type="checkbox" name="category" value="sommar"> Sommar</label>
+                    <label><input type="checkbox" name="category" value="byxor"> Byxor</label>
+                    <label><input type="checkbox" name="category" value="skor"> Skor</label>
+                </fieldset>
+
+                <button type="submit">Lägg till</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

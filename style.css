@@ -165,6 +165,11 @@ footer {
     display: none; 
 }
 
+.brand {
+    text-align: left;
+    margin-bottom: -15px; 
+    font-size: 0.8em;
+}
 
 .product-details {
     display: flex;
@@ -190,6 +195,13 @@ footer {
     flex-direction: column;
 }
 
+.product-info-details .product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    align-self: flex-start; 
+}
+
 .product-info-details h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
@@ -211,6 +223,7 @@ footer {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    margin-left: auto;
 }
 
 .add-to-cart {
@@ -253,6 +266,7 @@ footer {
     flex: 0 0 calc(100% / 9); 
     padding: 0 0.5rem;
     box-sizing: border-box;
+    position: relative;
 }
 
 .product-card-details img {
@@ -270,7 +284,13 @@ footer {
 }
 
 .product-card-details .price {
-    font-weight: bold;
+    font-weight: normal;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 35px;
+    margin-right: 10px;
 }
 
 .prev-details,
@@ -296,7 +316,7 @@ footer {
 }
 
 
-/* Mobile styles (<640px) */
+/* MOBILE SCREEN (<640px) */
 @media screen and (max-width: 639px) {
     .container {
         display: flex;
@@ -336,6 +356,7 @@ footer {
         margin: 10px 0;
     }
 
+    
     .hero-content {
         font-size: 1.2em;
     }
@@ -395,9 +416,9 @@ footer {
         display: none;
     }
 
-    /* Mobile Accordion Styles */
+    /* Mobile Accordion */
     .accordion-mobile .accordion-item {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid #000000;
     }
 
     .accordion-mobile .accordion-header {
@@ -423,17 +444,6 @@ footer {
     .accordion-mobile .accordion-toggle:checked + .accordion-header + .accordion-body {
         max-height: 200px;
         padding: 15px;
-    }
-
-    .accordion-mobile .accordion-header::after {
-        content: "\25BC";
-        float: right;
-        transform: rotate(0deg);
-        transition: transform 0.3s ease-out;
-    }
-
-    .accordion-mobile .accordion-toggle:checked + .accordion-header::after {
-        transform: rotate(180deg);
     }
 
     footer {
@@ -464,7 +474,7 @@ footer {
     }
 }
 
-/* Small and Medium screen styles (>=640px and <1024px) */
+/* SMALL TO MEDIUM TABLET (>=640px and <1024px) */
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .container {
         display: flex;
@@ -592,7 +602,7 @@ footer {
     }
 }
 
-/* Large screen styles (>=1024px) */
+/* LARGE DESKTOP (>=1024px) */
 @media screen and (min-width: 1024px) {
     .container {
         display: flex;
@@ -662,7 +672,7 @@ footer {
         position: relative;
         overflow: hidden;
         text-decoration: none;
-        color: rgb(122, 9, 150);
+        color: #ff4081;
     }
 
     .spot img {
@@ -673,12 +683,14 @@ footer {
 
     .spot p {
         position: absolute;
-        bottom: 20px;
-        left: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         margin: 0;
         font-size: 1.2em;
         font-weight: bold;
-        text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        
+        text-align: center; 
     }
 
     .product-grid {
@@ -757,7 +769,5 @@ footer {
 li {
     margin: 20px 0;
 }
-
-
 
 }
