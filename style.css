@@ -354,12 +354,17 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+        font-size: 1.2em; 
     }
 
-    
+    p, li, ol, button {
+        font-size: 1.2em; 
+    }
+
     .hero-content {
         font-size: 1.2em;
     }
+
     .product-grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -408,6 +413,7 @@ footer {
         width: 20px;
         height: 20px;
     }
+
     .features {
         align-items: start;
     }
@@ -436,7 +442,7 @@ footer {
         background: #ffffff;
         padding: 0 15px;
     }
-    
+
     .accordion-mobile .accordion-toggle {
         display: none;
     }
@@ -449,11 +455,11 @@ footer {
     footer {
         background-color: transparent; 
     }
-  
+
     .product-details {
         flex-direction: column;
     }
-    
+
     .product-image, .product-info-details {
         width: 100%;
     }
@@ -461,13 +467,13 @@ footer {
     .similar-products-details {
         display: none;
     }
-    
+
     .add-to-cart {
         background-color: #000;
         color: #fff;
         border: none;
         padding: 0.75rem 1.5rem;
-        font-size: 1rem;
+        font-size: 1.2em; 
         cursor: pointer;
         align-self: flex-start;
         width: 100%;
@@ -672,7 +678,7 @@ footer {
         position: relative;
         overflow: hidden;
         text-decoration: none;
-        color: #ff4081;
+        color: #ffd900;
     }
 
     .spot img {

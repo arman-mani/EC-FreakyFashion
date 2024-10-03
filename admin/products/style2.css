@@ -90,3 +90,11 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+input#name {
+    width: 50%; 
+}
+
+input#sku,
+input#price {
+    width: 30%; 
+}
