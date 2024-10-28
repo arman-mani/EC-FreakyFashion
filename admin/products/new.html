@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration - Ny produkt</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="/admin/products/styles.css">
 </head>
 <body>
     <header>
@@ -13,12 +13,12 @@
     <div class="container">
         <nav>
             <ul>
-                <li><a href="index.html">Produkter</a></li>
+                <li><a href="/admin/products/index.html">Produkter</a></li>
             </ul>
         </nav>
         <main>
-            <h2>[Godkänd] Administration: Ny Produkt </h2>
-            <form>
+            <h2>Administration: Ny Produkt</h2>
+            <form id="newProductForm">
                 <label for="name">Namn</label>
                 <input type="text" id="name" name="name" required>
 
@@ -46,5 +46,6 @@
             </form>
         </main>
     </div>
+    <script src="/admin/products/script.js"></script>
 </body>
 </html>
